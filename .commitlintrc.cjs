@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['@gcoguiec/commitlint-config/index.cjs']
+  extends: ['@gcoguiec/commitlint-config']
 };

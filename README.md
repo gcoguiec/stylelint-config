@@ -37,7 +37,7 @@ Add a `stylelint.config.cjs` file at the project root with the following configu
 // stylelint.config.cjs
 module.exports = {
   root: true,
-  extends: ['@gcoguiec/stylelint-config']
+  extends: ['@gcoguiec/stylelint-config/index.cjs']
 };
 ```
 
