@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@gcoguiec/commitlint-config': ^1.0.1
   '@gcoguiec/eslint-config-base': ^1.0.1
   commitlint: ^17.4.2
   cspell: ^6.21.0
@@ -19,6 +20,7 @@ specifiers:
   stylelint-scss: ^4.3.0
 
 devDependencies:
+  '@gcoguiec/commitlint-config': 1.0.1
   '@gcoguiec/eslint-config-base': 1.0.1_spqipfnsduuarjttd5zwu2w66e
   commitlint: 17.4.2
   cspell: 6.21.0
@@ -823,6 +825,11 @@ packages:
       strip-json-comments: 3.1.1
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@gcoguiec/commitlint-config/1.0.1:
+    resolution: {integrity: sha512-0Y0Xu2OOk+ZbFb3dfpT/MUeAaaeK67HOaIHTFZpE2pfZ6EJYNsST4w7q+Y54GheCCGAC8A2eUHM4DjYsZ54xDg==}
+    engines: {node: '>=19', pnpm: '>=7'}
     dev: true
 
   /@gcoguiec/eslint-config-base/1.0.1_spqipfnsduuarjttd5zwu2w66e:

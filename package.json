@@ -1,5 +1,5 @@
 {
-  "name": "stylelint-config",
+  "name": "@gcoguiec/stylelint-config",
   "version": "1.0.0",
   "description": "gcoguiec's Stylelint config",
   "author": "Guillaume 'Yugo' Coguiec <mail@gcoguiec.com> (https://github.com/gcoguiec/)",
@@ -34,6 +34,7 @@
     "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "devDependencies": {
+    "@gcoguiec/commitlint-config": "^1.0.1",
     "@gcoguiec/eslint-config-base": "^1.0.1",
     "commitlint": "^17.4.2",
     "cspell": "^6.21.0",
