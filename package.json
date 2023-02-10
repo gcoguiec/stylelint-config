@@ -1,6 +1,6 @@
 {
   "name": "@gcoguiec/stylelint-config",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "gcoguiec's Stylelint config",
   "author": "Guillaume 'Yugo' Coguiec <mail@gcoguiec.com> (https://github.com/gcoguiec/)",
   "license": "BSD-2-Clause",
@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@gcoguiec/commitlint-config": "^1.0.2",
-    "@gcoguiec/eslint-config-base": "^1.0.1",
+    "@gcoguiec/eslint-config-base": "^1.0.2",
     "commitlint": "^17.4.2",
     "cspell": "^6.22.0",
     "eslint": "^8.33.0",
@@ -45,18 +45,17 @@
     "eslint-plugin-jest": "^27.2.1",
     "eslint-plugin-promise": "^6.1.1",
     "husky": "^8.0.3",
-    "jest": "^29.4.1",
-    "lint-staged": "^13.1.0",
-    "prettier": "^2.8.3",
-    "stylelint": "^14.16.1",
-    "stylelint-order": "^6.0.1",
+    "jest": "^29.4.2",
+    "lint-staged": "^13.1.1",
+    "prettier": "^2.8.4",
+    "stylelint": "^15.0.0",
+    "stylelint-order": "^6.0.2",
     "stylelint-prettier": "^2.0.0",
     "stylelint-scss": "^4.3.0"
   },
   "peerDependencies": {
-    "stylelint": "^14.16.1",
+    "stylelint": "^15.0.0",
     "stylelint-order": "^6.0.1",
-    "stylelint-prettier": "^2.0.0",
     "stylelint-scss": "^4.3.0"
   },
   "engines": {
