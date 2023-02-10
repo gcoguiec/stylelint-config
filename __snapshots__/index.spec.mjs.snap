@@ -19,12 +19,6 @@ exports[`Requires an empty line before custom properties 1`] = `
   "
 `;
 
-exports[`Requires color to be lower-case 1`] = `
-"
-    $color: #fff;
-  "
-`;
-
 exports[`Requires color to be short 1`] = `
 "
     $color: #fff;

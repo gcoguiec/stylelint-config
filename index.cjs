@@ -1,3 +1,5 @@
+const bemcased = '^([a-z][a-z0-9]*)((?:-{1,2}|_{1,2}|)[a-z0-9]+)*$';
+
 module.exports = {
   plugins: ['stylelint-order', 'stylelint-scss'],
   rules: {
@@ -17,7 +19,6 @@ module.exports = {
     'at-rule-empty-line-before': null,
     'at-rule-no-unknown': null,
     'at-rule-no-vendor-prefix': true,
-    'color-hex-case': 'lower',
     'block-no-empty': true,
     'color-hex-length': 'short',
     'color-no-invalid-hex': true,
@@ -39,17 +40,17 @@ module.exports = {
       }
     ],
     'custom-media-pattern': [
-      '^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
+      bemcased,
       {
         message: name =>
-          `Expected custom media query name "${name}" to be kebab-case`
+          `Expected custom media query name "${name}" to be BEM-cased`
       }
     ],
     'custom-property-pattern': [
-      '^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
+      bemcased,
       {
         message: name =>
-          `Expected custom property name "${name}" to be kebab-case`
+          `Expected custom property name "${name}" to be BEM-cased`
       }
     ],
     'comment-no-empty': true,
@@ -75,7 +76,7 @@ module.exports = {
     'font-family-name-quotes': 'always-where-recommended',
     'function-calc-no-unspaced-operator': true,
     'function-linear-gradient-no-nonstandard-direction': true,
-    'function-no-unknown': true,
+    'function-no-unknown': null,
     'function-name-case': 'lower',
     'function-url-quotes': 'always',
     'hue-degree-notation': 'angle',
@@ -83,9 +84,9 @@ module.exports = {
     'keyframe-block-no-duplicate-selectors': true,
     'keyframe-declaration-no-important': true,
     'keyframes-name-pattern': [
-      '^([a-z][a-z0-9]*)(-[a-z0-9]+)*$',
+      bemcased,
       {
-        message: name => `Expected keyframe name "${name}" to be kebab-case`
+        message: name => `Expected keyframe name "${name}" to be BEM-cased`
       }
     ],
     'length-zero-no-unit': [
@@ -102,7 +103,7 @@ module.exports = {
     'no-duplicate-selectors': true,
     'no-empty-source': null,
     'no-invalid-double-slash-comments': true,
-    'no-invalid-position-at-import-rule': true,
+    'no-invalid-position-at-import-rule': null,
     'no-irregular-whitespace': true,
     'number-max-precision': 5,
     'property-no-unknown': true,
@@ -114,6 +115,20 @@ module.exports = {
       }
     ],
     'selector-attribute-quotes': 'always',
+    'selector-class-pattern': [
+      bemcased,
+      {
+        message: selector =>
+          `Expected class selector "${selector}" to be BEM-cased`
+      }
+    ],
+    'selector-id-pattern': [
+      bemcased,
+      {
+        message: selector =>
+          `Expected id selector "${selector}" to be BEM-cased`
+      }
+    ],
     'selector-pseudo-class-no-unknown': true,
     'selector-pseudo-element-no-unknown': null,
     'selector-type-no-unknown': null,

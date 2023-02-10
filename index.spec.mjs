@@ -73,20 +73,6 @@ it('Disallows empty blocks', async () => {
   });
 });
 
-it('Requires color to be lower-case', async () => {
-  const { results, fixed } = await lint`
-    $color: #FFFFFF;
-  `;
-
-  expect(results).toHaveBeenParsed();
-  expect(results).toHaveAnError('color-hex-case', {
-    line: 2,
-    column: 13,
-    text: 'Expected "#FFFFFF" to be "#ffffff" (color-hex-case)'
-  });
-  expect(fixed).toMatchSnapshot();
-});
-
 it('Requires color to be short', async () => {
   const { results, fixed } = await lint`
     $color: #ffffff;
