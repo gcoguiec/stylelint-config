@@ -26,7 +26,7 @@
 ### Install
 
 ```bash
-pnpm add -D stylelint stylelint-order stylelint-scss stylelint-prettier @gcoguiec/stylelint-config
+pnpm add -D stylelint stylelint-order stylelint-scss @gcoguiec/stylelint-config
 ```
 
 ### Configure
@@ -37,7 +37,7 @@ Add a `stylelint.config.cjs` file at the project root with the following configu
 // stylelint.config.cjs
 module.exports = {
   root: true,
-  extends: ['@gcoguiec/stylelint-config/index.cjs']
+  extends: ['@gcoguiec/stylelint-config']
 };
 ```
 
