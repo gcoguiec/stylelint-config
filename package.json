@@ -4,7 +4,6 @@
   "description": "gcoguiec's Stylelint config",
   "author": "Guillaume 'Yugo' Coguiec <mail@gcoguiec.com> (https://github.com/gcoguiec/)",
   "license": "BSD-2-Clause",
-  "packageManager": "pnpm@7.25.1",
   "type": "module",
   "main": "index.cjs",
   "files": [
@@ -58,8 +57,22 @@
     "stylelint-order": "^6.0.1",
     "stylelint-scss": "^4.3.0"
   },
-  "engines": {
-    "node": ">=19",
-    "pnpm": ">=7"
+  "devEngines": {
+    "node": ">=20"
+  },
+  "volta": {
+    "node": "20.7.0",
+    "pnpm": "8.9.0"
+  },
+  "packageManager": "pnpm@8.9.0",
+  "pnpm": {
+    "overrides": {
+      "yaml@>=2.0.0-5 <2.2.2": ">=2.2.2",
+      "word-wrap@<1.2.4": ">=1.2.4",
+      "semver@<5.7.2": ">=5.7.2",
+      "semver@>=6.0.0 <6.3.1": ">=6.3.1",
+      "semver@>=7.0.0 <7.5.2": ">=7.5.2",
+      "postcss@<8.4.31": ">=8.4.31"
+    }
   }
 }
