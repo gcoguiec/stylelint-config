@@ -1,6 +1,6 @@
 {
   "name": "@gcoguiec/stylelint-config",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "gcoguiec's Stylelint config",
   "author": "Guillaume 'Yugo' Coguiec <mail@gcoguiec.com> (https://github.com/gcoguiec/)",
   "license": "BSD-2-Clause",
@@ -29,28 +29,28 @@
     "precommit": "pnpm lint-staged",
     "prepare": "husky install",
     "prepush": "pnpm fmt:check",
-    "publish": "pnpm publish --access public",
+    "pub": "pnpm publish --access public",
     "spellcheck": "cspell --config=.cspell.json \"**/*.{md,js,cjs,mjs}\"",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "devDependencies": {
-    "@gcoguiec/commitlint-config": "^1.0.4",
-    "@gcoguiec/eslint-config-base": "^1.0.4",
-    "commitlint": "^17.7.2",
-    "cspell": "^7.3.7",
-    "eslint": "^8.51.0",
+    "@gcoguiec/commitlint-config": "^1.0.6",
+    "@gcoguiec/eslint-config-base": "^1.0.7",
+    "commitlint": "^18.4.2",
+    "cspell": "^8.0.0",
+    "eslint": "^8.53.0",
     "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-import": "^2.28.1",
-    "eslint-plugin-jest": "^27.4.2",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jest": "^27.6.0",
     "eslint-plugin-promise": "^6.1.1",
     "husky": "^8.0.3",
     "jest": "^29.7.0",
-    "lint-staged": "^14.0.1",
-    "prettier": "^3.0.3",
-    "stylelint": "^15.10.3",
+    "lint-staged": "^15.1.0",
+    "prettier": "^3.1.0",
+    "stylelint": "^15.11.0",
     "stylelint-order": "^6.0.3",
     "stylelint-prettier": "^4.0.2",
-    "stylelint-scss": "^5.2.1"
+    "stylelint-scss": "^5.3.1"
   },
   "peerDependencies": {
     "stylelint": "^15.0.0",
@@ -58,13 +58,13 @@
     "stylelint-scss": "^4.3.0"
   },
   "devEngines": {
-    "node": ">=20"
+    "node": ">=21"
   },
   "volta": {
-    "node": "20.7.0",
-    "pnpm": "8.9.0"
+    "node": "21.1.0",
+    "pnpm": "8.10.2"
   },
-  "packageManager": "pnpm@8.9.0",
+  "packageManager": "pnpm@8.10.2",
   "pnpm": {
     "overrides": {
       "yaml@>=2.0.0-5 <2.2.2": ">=2.2.2",
@@ -72,7 +72,8 @@
       "semver@<5.7.2": ">=5.7.2",
       "semver@>=6.0.0 <6.3.1": ">=6.3.1",
       "semver@>=7.0.0 <7.5.2": ">=7.5.2",
-      "postcss@<8.4.31": ">=8.4.31"
+      "postcss@<8.4.31": ">=8.4.31",
+      "@babel/traverse@<7.23.2": ">=7.23.2"
     }
   }
 }
