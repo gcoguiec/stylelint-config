@@ -156,7 +156,7 @@ module.exports = {
     'scss/at-extend-no-missing-placeholder': true,
     'scss/at-function-parentheses-space-before': 'never',
     'scss/at-mixin-parentheses-space-before': 'never',
-    'scss/at-import-no-partial-leading-underscore': true,
+    'scss/load-no-partial-leading-underscore': true,
     'scss/at-mixin-argumentless-call-parentheses': 'always',
     'scss/at-rule-no-unknown': true,
     'scss/comment-no-empty': true,
