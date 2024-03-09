@@ -8,10 +8,10 @@ import config from './index.cjs';
 async function lint() {
   const [literals] = Array.prototype.slice.call(arguments);
   const code = typeof literals === 'string' ? literals : literals[0];
-  const output = await stylelint.lint({ code, config });
-  const { output: fixed } = await stylelint.lint({ code, config, fix: true });
+  const { results } = await stylelint.lint({ code, config });
+  const { code: fixed } = await stylelint.lint({ code, config, fix: true });
 
-  return { ...output, fixed };
+  return { results, fixed };
 }
 
 it('Allows an empty line before an at-rule', async () => {
